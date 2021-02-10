@@ -1,0 +1,31 @@
+<style>
+
+body{
+	 background: #ede7e7;
+}
+.nav{ 
+	margin: 20px auto;
+	width: 400px;
+    text-transform: capitalize;
+	text-align: center;
+}
+.nav button {
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin: 10px 0px;
+    background: #00bcd4;
+    border: 0px;
+    color: #fff;
+    font-weight: 700;
+	cursor: pointer;
+}
+
+</style>
+<div class="nav">
+<button routerLink="/login">Sign In</button>
+<button routerLink="/user">Sign Up</button>
+</div>
+ 
+
+
+<router-outlet></router-outlet>

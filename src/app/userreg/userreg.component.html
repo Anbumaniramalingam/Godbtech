@@ -1,0 +1,73 @@
+<style>
+.login-sec{ 
+	margin: 20px auto;
+	width: 400px;
+    text-transform: capitalize;
+	text-align: center;
+}
+.form-group {
+    padding: 10px;
+    clear: both;
+    overflow: hidden;
+}
+.input#gender {
+    float: none;
+}
+.form-group label{float: left;}
+.form-group input{float: right;}
+.btn-primary {
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin: 10px 0px;
+    background: #00bcd4;
+    border: 0px;
+    color: #fff;
+    font-weight: 700;
+	cursor: pointer;
+}
+</style>
+<div class="login-sec">
+	<p>Registation page!</p>
+
+	 <form [formGroup]="user"  >
+	 <div class="form-group">
+		<label for="fname">first name:</label>
+		<input type="text" class="form-control" formControlName="fname"  placeholder="Enter password" name="fname"  id="fname" >
+	  </div>
+	  <div class="form-group">
+		<label for="lname">last name:</label>
+		<input type="text" class="form-control" formControlName="lname"  placeholder="Enter password" name="lname"  id="lname" >
+	  </div>
+	  <div class="form-group" >
+		<label for="email">Email address:</label>
+		<input type="text" class="form-control" formControlName="email" placeholder="Enter email" name="email"   id="email" >
+	  </div>
+	  <div class="form-group" >
+		<label for="phone">mobile number:</label>
+		<input type="text" class="form-control" formControlName="phone" placeholder="Enter email" name="phone"   id="phone" >
+	  </div>
+	  <div class="form-group" >
+		<label for=""> gender:</label>
+		<input type="radio" class="form-control" formControlName="gender" placeholder="Enter email" name="gender"   id="gender" >
+		<input type="radio" class="form-control" formControlName="gender" placeholder="Enter email" name="gender"   id="gender" >
+	  </div>
+	  <div class="form-group">
+		<label for="add">address:</label>
+		<input type="text" class="form-control" formControlName="add"  placeholder="Enter password" name="add"  id="add" >
+	  </div>
+	  <div class="form-group" >
+		<label for="pwd1">Password:</label>
+		<input type="password" class="form-control" formControlName="pwd1"  placeholder="Enter password" name="pwd1"  id="pwd1" >
+	  </div>
+	  <div class="form-group" >
+		<label for="pwd2">new Password:</label>
+		<input type="password" class="form-control" formControlName="pwd2"  placeholder="Enter password" name="pwd2"  id="pwd2" >
+	  </div>
+
+	  
+	  
+	  <button type="submit" (click)="onSave()" class="btn btn-primary">save</button>
+
+
+	</form> 
+</div>
